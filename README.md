@@ -7,8 +7,9 @@ Application Mobile for the IETF Meetings
 This project is a starting point for a Flutter application for IETF. Using Flutter Framework to code once and deploy on both iOS and Android.
 
 ## Screenshot
+<img src="ui.jpg" alt="Info Meeting" height="150"/>
+<img src="ui2.jpg" alt="Meeting List" height="150"/>
+<img src="ui3.jpg" alt="Meeting List" height="150"/>
+<img src="ui4.jpg" alt="Meeting List" height="150"/>
 
-![](ui.jpg) 
-![](ui2.jpg)
-![](ui3.jpg)
-![](ui4.jpg)
+
