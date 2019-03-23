@@ -13,7 +13,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
-  @override 
+  @override
   _MyAppState createState() => _MyAppState();
 }
 
@@ -21,64 +21,82 @@ class _MyAppState extends State<MyApp> {
   final title = "Meeting";
   final navigatorKey = GlobalKey<NavigatorState>();
 
-
-
   void _showDialog() {
     final context = navigatorKey.currentState.overlay.context;
     final dialog = AlertDialog(
       title: Text("Filter by Group"),
       content: Wrap(
         children: <Widget>[
-
           FilterChip(
             label: Text("Any"),
-            backgroundColor: Colors.transparent ,
+            backgroundColor: Colors.transparent,
 //            shape: StadiumBorder(side: BorderSide()),
             selected: true,
             selectedColor: Colors.lightBlueAccent,
-            onSelected: (bool value) {print("selected");},
+            onSelected: (bool value) {
+              print("selected");
+            },
           ),
-          SizedBox(width: 8,),
+          SizedBox(
+            width: 8,
+          ),
           FilterChip(
             label: Text("ART"),
             backgroundColor: Colors.transparent,
 //        shape: StadiumBorder(side: BorderSide()),
             selected: false,
-            onSelected: (bool value) {print("selected");},
+            onSelected: (bool value) {
+              print("selected");
+            },
           ),
-          SizedBox(width: 8,),
+          SizedBox(
+            width: 8,
+          ),
           FilterChip(
             label: Text("INT"),
             backgroundColor: Colors.transparent,
 //        shape: StadiumBorder(side: BorderSide()),
             selected: false,
-            onSelected: (bool value) {print("selected");},
+            onSelected: (bool value) {
+              print("selected");
+            },
           ),
-          SizedBox(width: 8,),
+          SizedBox(
+            width: 8,
+          ),
           FilterChip(
             label: Text("OPS"),
             backgroundColor: Colors.transparent,
 //        shape: StadiumBorder(side: BorderSide()),
             selected: false,
-            onSelected: (bool value) {print("selected");},
+            onSelected: (bool value) {
+              print("selected");
+            },
           ),
-          SizedBox(width: 8,),
+          SizedBox(
+            width: 8,
+          ),
           FilterChip(
             label: Text("SEC"),
             backgroundColor: Colors.transparent,
 //        shape: StadiumBorder(side: BorderSide()),
             selected: false,
-            onSelected: (bool value) {print("selected");},
+            onSelected: (bool value) {
+              print("selected");
+            },
           ),
-          SizedBox(width: 8,),
+          SizedBox(
+            width: 8,
+          ),
           FilterChip(
             label: Text("TSV"),
             backgroundColor: Colors.transparent,
 //        shape: StadiumBorder(side: BorderSide()),
             selected: false,
-            onSelected: (bool value) {print("selected");},
+            onSelected: (bool value) {
+              print("selected");
+            },
           ),
-
         ],
       ),
     );
@@ -156,30 +174,187 @@ class EventsLists extends StatefulWidget {
 class _EventsListsState extends State<EventsLists> {
   @override
   Widget build(BuildContext context) {
-    return ListView.separated(
-      itemCount: 50,
-      itemBuilder: (context, index) {
-        return Card(
-          child: Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Text(
-              index.toString(),
-              style: TextStyle(fontSize: 22.0),
+    return Container(
+      child: ListView(
+        children: <Widget>[
+          SizedBox(
+            child: Padding(
+              padding: EdgeInsets.only(left: 16, top: 8, bottom: 8),
+              child: Text(
+                "9: 00 AM",
+                style: TextStyle(
+                    color: Color(0xFF9C9C9C),
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16),
+              ),
             ),
           ),
-        );
-      },
-      separatorBuilder: (context, position) {
-        return Card(
-          child: Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Text(
-              position.toString(),
-              style: TextStyle(fontSize: 22.0),
+          Card(
+            color: Color(0xFF2689EE),
+            child: Container(
+              padding: EdgeInsets.only(top: 8, left: 16, right: 8),
+              height: 75,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      SizedBox(height: 8,),
+                      Text("7: 00 PM", style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 10),),
+                      SizedBox(height: 10,),
+                      Text(
+                        "TCP Maintenance and Minor Extensions",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 12),
+                      )
+                    ],
+                  ),
+                  Icon(
+                    Icons.more_horiz,
+                    color: Colors.white,
+                  )
+                ],
+              ),
             ),
           ),
-        );
-      },
+          Card(
+            color: Color(0xFF06CCCD),
+            child: Container(
+              padding: EdgeInsets.only(top: 8, left: 16, right: 8),
+              height: 75,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      SizedBox(height: 8,),
+                      Text("7: 00 PM", style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 10),),
+                      SizedBox(height: 10,),
+                      Text(
+                        "TCP Maintenance and Minor Extensions",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 12),
+                      )
+                    ],
+                  ),
+                  Icon(
+                    Icons.more_horiz,
+                    color: Colors.white,
+                  )
+                ],
+              ),
+            ),
+          ),
+          SizedBox(
+            child: Padding(
+              padding: EdgeInsets.only(left: 16, top: 8, bottom: 8),
+              child: Text(
+                "12: 00 PM",
+                style: TextStyle(
+                    color: Color(0xFF9C9C9C),
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16),
+              ),
+            ),
+          ),
+          Card(
+            color: Color(0xFF06CC8E),
+            child: Container(
+              padding: EdgeInsets.only(top: 8, left: 16, right: 8),
+              height: 75,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      SizedBox(height: 8,),
+                      Text("7: 00 PM", style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 10),),
+                      SizedBox(height: 10,),
+                      Text(
+                        "TCP Maintenance and Minor Extensions",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 12),
+                      )
+                    ],
+                  ),
+                  Icon(
+                    Icons.more_horiz,
+                    color: Colors.white,
+                  )
+                ],
+              ),
+            ),
+          ),
+          SizedBox(
+            child: Padding(
+              padding: EdgeInsets.only(left: 16, top: 8, bottom: 8),
+              child: Text(
+                "3: 00 PM",
+                style: TextStyle(
+                    color: Color(0xFF9C9C9C),
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16),
+              ),
+            ),
+          ),
+          Card(
+            color: Color(0xFF795FF4),
+            child: Container(
+              padding: EdgeInsets.only(top: 8, left: 16, right: 8),
+              height: 75,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      SizedBox(height: 8,),
+                      Text("7: 00 PM", style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 10),),
+                      SizedBox(height: 10,),
+                      Text(
+                        "TCP Maintenance and Minor Extensions",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 12),
+                      )
+                    ],
+                  ),
+                  Icon(
+                    Icons.more_horiz,
+                    color: Colors.white,
+                  )
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
