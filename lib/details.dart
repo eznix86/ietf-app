@@ -21,6 +21,17 @@ class _EventDescriptionState extends State<EventDescription> {
             onPressed: () {
               print("Pressed");
             }),
+        actions: <Widget>[
+          Padding(
+            padding: EdgeInsets.only(right: 16),
+            child: IconButton(
+              onPressed: (){
+
+              },
+              icon: Icon(FontAwesomeIcons.star, color: Colors.white),
+            ),
+          )
+        ],
         title: Text("Meetings"),
         backgroundColor: Color(0xFF2689ee),
         elevation: 0,
@@ -221,11 +232,11 @@ class _DescriptionListState extends State<DescriptionList> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        backgroundColor: Colors.white,
-        child: IconButton(icon: Icon(Icons.star), onPressed: null),
-      ),
+//      floatingActionButton: FloatingActionButton(
+//        onPressed: () {},
+//        backgroundColor: Colors.white,
+//        child: IconButton(icon: Icon(Icons.star), onPressed: null),
+//      ),
     );
   }
 }
