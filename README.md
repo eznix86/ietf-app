@@ -23,7 +23,7 @@ Endpoint for IETF events:
 https://datatracker.ietf.org/api/v1/meeting/meeting/?format=json&limit=25
 
 This endpoint gives the list of events associated with IETF, including 104, 105, 106... etc.
-- Useful endpoints
+- Useful data items
 ```
       "agenda_info_note": 
       "agenda_warning_note": "",
