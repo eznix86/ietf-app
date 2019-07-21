@@ -1,17 +1,24 @@
-# ietf_app
+# IETF App 
 
 Application Mobile for the IETF Meetings
 
+- Current state: WIP
+
 ## Getting Started
 
-This project is a starting point for a Flutter application for IETF. Using Flutter Framework to code once and deploy on both iOS and Android.
+Using Google UI Framework, Flutter, to code once and deploy on both iOS and Android for similar experience.
 
 ## Screenshot
-<img src="ui.jpg" alt="Info Meeting" height="300"/>
-<img src="ui2.jpg" alt="Meeting List" height="300"/>
-<img src="ui3.jpg" alt="Meeting List" height="300"/>
-<img src="ui4.jpg" alt="Meeting List" height="300"/>
 
+<div class="grid" style=" display: flex;  align-items: center;  flex-wrap: wrap;  justify-content: center;">
+      <img src="ui1.png" style=" margin: 10px;  padding: 20px;" alt="" height="300"/>
+      <img src="ui2.png" style=" margin: 10px;  padding: 20px;" alt="" height="300"/>
+      <img src="ui3.png" style=" margin: 10px;  padding: 20px;" alt="" height="300"/>
+      <img src="ui4.png" style=" margin: 10px;  padding: 20px;" alt="" height="300"/>
+      <img src="ui5.png" style=" margin: 10px;  padding: 20px;" alt="" height="300"/>
+      <img src="ui6.png" style=" margin: 10px;  padding: 20px;" alt="" height="300"/>
+      <img src="ui7.png" style=" margin: 10px;  padding: 20px;" alt="" height="300"/>
+</div>
 
 EndPoint: 
 https://datatracker.ietf.org/meeting/XYZ/agenda.json
